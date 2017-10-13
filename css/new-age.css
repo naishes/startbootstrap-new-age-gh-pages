@@ -45,6 +45,7 @@ p {
   margin-bottom: 20px; }
 
 section {
+	
   padding: 100px 0; 
   }
   section h2 {
@@ -234,8 +235,7 @@ section.cta {
 
 		/*    dkshkdshkshksd*/
 .equipa {
-	background: url("../img/music8.jpg");
-	border: 2px black solid;
+
 
   list-style: none;
 text-align: center;
@@ -428,7 +428,9 @@ footer {
   background: -webkit-linear-gradient(#fdcc52, #fdc539);
   background: linear-gradient(#fdcc52, #fdc539);
 	background: url("../img/music7.jpg");  }
+.bg-equipa {
 
+	background: url("../img/music2.jpg");  }
 .text-primary {
   color: #fdcc52; }
 
