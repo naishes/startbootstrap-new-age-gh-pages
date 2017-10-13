@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  padding-top: 60px;
+}
+h2 {
+  font-size: 50px;
+  margin-bottom: 0px;
+  font-weight: 100;
+}
+p {
+  font-size: 18px;
+}
+.transition {
+  transition: .3s cubic-bezier(.3, 0, 0, 1.3)
+}
+.three .transition {
+  transition: .7s cubic-bezier(.3, 0, 0, 1.3)
+}
+.five .transition {
+  transition: .5s cubic-bezier(.3, 0, 0, 1.3)
+}
+
+.equipa {
+  list-style: none;
+  padding: 0;
+  margin: 100px 0;
+}
+.equipa > li {
+  background: #FFFFFF;
+  border: 1px solid rgba(150,150,150,0.29);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(103,85,85,0.39);
+  box-shadow: 0px 0px 18px 0px rgba(103,85,85,0.39);
+  width: 250px;
+  height: 350px;
+  display: inline-block;
+  margin: 0 20px;
+  text-align: center;
+}
+.equipa > li img {
+  margin-top: -5px;
+}
+.equipa > li:hover img {
+  margin-top: 30px;
+}
+.equipa > li img.more-about {
+  left: 103px;
+  padding: 1px;
+  position: absolute;
+  width: 45px;
+  z-index: 1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  bottom: 50px;
+}
+.equipa > li:hover {
+  -moz-box-shadow: 0px 0px 5px 0px rgba(103,85,85,0.25);
+  box-shadow: 0px 0px 5px 0px rgba(103,85,85,0.25);
+}
+.equipa > li:hover span {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  top: -300px;
+  background: #2f7abe;
+}
+.equipa > li:hover span p {
+  color: white;
+  font-size: 14px;
+}
+.equipa > li span .text-wrapper {
+  opacity: 0;
+}
+.equipa > li:hover span .text-wrapper {
+  bottom: 20px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  opacity: 1;
+}
+.equipa > li:hover .social {
+  margin-top: 250px;
+}
+.equipa > li:hover .wrapper > img {
+  display: none;
+}
+.equipa > li:hover h3 {
+  color: #2F7ABE;
+  margin-top: -105px;
+}
+.equipa > li .wrapper {
+  overflow: hidden;
+  position: absolute;
+  width: 250px;
+  height: 350px;
+}
+.equipa > li span {
+  display: block;
+  height: 500px;
+  left: -125px;
+  position: absolute;
+  top: -490px;
+  width: 500px;
+  background: #579CDB;
+}
+.equipa .mamber-img {
+  width: 100px;
+}
+.equipa > li h3 em {
+  display: block;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+ margin-top: 5px  color: #2F7ABE;
+}
+.equipa .social {
+  list-style: none;
+  text-align: center;
+  margin: 10px 0 0 0;
+  padding: 10px;
+}
+.equipa .social li {
+  opacity: 0;
+  display: inline-block;
+  padding: 5px;
+}
+.equipa > li:hover .social li {
+  opacity: 0.5;
+}
+.equipa .social li a {
+  cursor: pointer;
+  display: block;
+}
+.equipa .social li a:hover {
+  opacity: 0.5;
+}
+.equipa .social li img {
+  width: 24px;
+}
+.equipa > li:hover .social li a {
+  -webkit-animation: social-show 0.5s 1;
+  -moz-animation: social-show 0.5s 1;
+  -o-animation: social-show 0.5s 1;
+  animation: social-show 0.5s 1;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.equipa .social li img {
+  width: 24px;
+}
+ @-webkit-keyframes social-show {
+ from {
+margin-top: 140px;
+}
+to {
+  margin-top: 0px;
+}
+}
+ @-moz-keyframes social-show {
+ from {
+margin-top: 140px;
+}
+to {
+  margin-top: 0px;
+}
+}
+ @-o-keyframes social-show {
+ from {
+margin-top: 140px;
+}
+to {
+  margin-top: 0px;
+}
+}
+ @keyframes social-show {
+ from {
+margin-top: 140px;
+}
+to {
+  margin-top: 0px;
+}
+}
