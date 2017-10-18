@@ -34,5 +34,7 @@
       $("#mainNav").removeClass("navbar-shrink");
     }
   });
+  
+  
 
 })(jQuery); // End of use strict
