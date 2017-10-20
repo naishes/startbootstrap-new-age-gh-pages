@@ -17,7 +17,7 @@ a {
 
 section {
 	
-  padding: 100px 0; 
+  padding: 100px 0 ; 
   }
 
 
@@ -127,8 +127,11 @@ section {
  
   
 body {
-    padding-top: 155px;
+    
 	background: url("../img/music8.jpg");
+}
+h1 {
+	margin:100px;
 }
 .panel-login {
 	
