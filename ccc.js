@@ -1,25 +1,5 @@
-/*$(function() {
-
-    $('login-form-link').click(function(e) {
-		$("login-form").delay(100).fadeIn(100);
- 		$("register-form").fadeOut(100);
-		$('register-form-link').removeClass('active');
-		$(this).addClass('active');
-		e.preventDefault();
-	});
-	$('register-form-link').click(function(e) {
-		$("register-form").delay(100).fadeIn(100);
- 		$("login-form").fadeOut(100);
-		$('login-form-link').removeClass('active');
-		$(this).addClass('active');
-		e.preventDefault();
-	});
-
-});
-*/
-
  $(document).ready(function() {
-    $('#register-form').bootstrapValidator({
+    $('#contact_form').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
@@ -27,7 +7,7 @@
             validating: 'glyphicon glyphicon-refresh'
         },
         fields: {
-            username: {
+            first_name: {
                 validators: {
                         stringLength: {
                         min: 2,
@@ -37,8 +17,17 @@
                     }
                 }
             },
-            
-			 email: {
+             last_name: {
+                validators: {
+                     stringLength: {
+                        min: 2,
+                    },
+                    notEmpty: {
+                        message: 'Please enter your Last Name'
+                    }
+                }
+            },
+			 user_name: {
                 validators: {
                      stringLength: {
                         min: 8,
@@ -58,14 +47,49 @@
                     }
                 }
             },
-			
-            
-     
+			confirm_password: {
+                validators: {
+                     stringLength: {
+                        min: 8,
+                    },
+                    notEmpty: {
+                        message: 'Please confirm your Password'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please enter your Email Address'
+                    },
+                    emailAddress: {
+                        message: 'Please enter a valid Email Address'
+                    }
+                }
+            },
+            contact_no: {
+                validators: {
+                  stringLength: {
+                        min: 12, 
+                        max: 12,
+                    notEmpty: {
+                        message: 'Please enter your Contact No.'
+                     }
+                }
+            },
+			 department: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please select your Department/Office'
+                    }
+                }
+            },
+                }
             }
         })
         .on('success.form.bv', function(e) {
             $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-                $('#register_form').data('bootstrapValidator').resetForm();
+                $('#contact_form').data('bootstrapValidator').resetForm();
 
             // Prevent form submission
             e.preventDefault();
