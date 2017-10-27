@@ -11,7 +11,12 @@ body {
 
 body {
   font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif'; }
-
+body {
+    
+	background: url("../img/music10.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 a {
   color: #fdcc52;
   -webkit-transition: all .35s;

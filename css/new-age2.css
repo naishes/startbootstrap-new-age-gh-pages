@@ -129,6 +129,8 @@ section {
 body {
     
 	background: url("../img/music10.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 h1 {
 	margin:100px;
