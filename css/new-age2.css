@@ -55,7 +55,7 @@ section {
     #mainNav .navbar-nav > li > a:hover,
     #mainNav .navbar-nav > li > a:focus:hover {
       color: #ff9900; }
-	  @media (min-width: 992px) {
+	/*  @media (min-width: 992px) {
     #mainNav {
       border-color: transparent;
       background-color: transparent; }
@@ -82,8 +82,10 @@ section {
           #mainNav.navbar-shrink .navbar-nav > li > a:hover,
           #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
             color: #fdcc52; } }
-
-
+*/
+section.panel-login {
+  position: relative;
+  }
    
 
 
