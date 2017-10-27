@@ -1,4 +1,4 @@
-/*$(function() {
+$(function() {
 
     $('login-form-link').click(function(e) {
 		$("login-form").delay(100).fadeIn(100);
@@ -16,16 +16,12 @@
 	});
 
 });
-*/
+
 
  $(document).ready(function() {
     $('#register-form').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
-        feedbackIcons: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
+
         fields: {
             username: {
                 validators: {
