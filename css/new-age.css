@@ -125,22 +125,15 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: black;
-  background: url("../img/music10.jpg");
-  background-size: cover;
+
  }
   header.masthead .header-content {
     margin-top: 300px;
 	max-width: 500px;
     margin-bottom: 100px;
     text-align: center; }
-    header.masthead .header-content h1 {
-      font-size: 30px; }
-  header.masthead .device-container {
-    max-width: 325px;
-    margin-right: auto;
-    margin-left: auto; }
-    header.masthead .device-container .screen img {
-      border-radius: 3px; }
+
+
   @media (min-width: 992px) {
     header.masthead {
       height: 100vh;
@@ -480,11 +473,7 @@ footer {
       footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
         text-decoration: none; }
 
-.bg-primary {
-  background: #fdcc52;
-  background: -webkit-linear-gradient(#fdcc52, #fdc539);
-  background: linear-gradient(#fdcc52, #fdc539);
-	background: url("../img/music7.jpg");  }
+
 .bg-equipa {
 
 	background: url("../img/music10.jpg");  }
